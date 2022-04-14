@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="How to Become an SEO Expert (8 Steps)" />
+    <meta
+      property="og:description"
+      content="Selamat Hari Jadi yang Ketiga Tahun"
+    />
+    <meta property="og:image" content="./images/lia.jpeg" />
+    <title>Happy Anniversary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;900&family=Noto+Sans+JP&family=Poppins:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section id="hero">
+        <div class="hero-right">
+          <div class="canvas-wrapper">
+            <canvas id="canvas"></canvas>
+            <!-- <h1>Test</h1> -->
+            <div
+              class="text text-center d-flex align-items-center"
+              style="
+                background-color: rgba(255, 255, 255, 0.493);
+                height: 100vh;
+              "
+            >
+              <div>
+                <h1 class="kanji"><span>Happy Anniversary 3th</span></h1>
+                <h1 class="big-text">Amelia Rahma</h1>
+                <img
+                  src="images/lia.jpeg"
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 5px #bb377d solid;
+                  "
+                />
+                <center>
+                  <p class="mt-2">
+                    Terima Kasih sudah menemani dalam kurun waktu yang tidak
+                    sebentar, 3 Tahun Itu Ibarat Anak yang sudah baru berjalan,
+                    hubungan kita juga ibarat seperti itu masih masa pertumbuhan
+                    & berkembang, tolong di terima segala kekurangannya & bisa
+                    saling melengkapi, minta doa nya biar gampang nabung nya, di
+                    lancarkan rezekinya
+                  </p>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+
+    <script>
+      let wrapper = document.querySelector(".canvas-wrapper");
+
+      const starback = new Starback("#canvas", {
+        width: wrapper.clientWidth,
+        height: wrapper.clientHeight,
+        type: "dot",
+        quantity: 100,
+        starSize: [1, 5],
+        direction: 20,
+        starColor: "#e19bc7",
+        randomOpacity: [0.7, 1],
+        backgroundColor: "transparent",
+      });
+    </script>
+  </body>
+</html>
